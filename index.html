@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | Sipan_Rotation</title>
+    <title>Unity WebGL Player | rezan</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
     <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
@@ -14,11 +14,11 @@
         // Your web app's Firebase configuration
         const firebaseConfig = {
             apiKey: "AIzaSyBOIKJ-u6wHuTgBSUdmTQ_IQtAzIrwxo9I",
-  authDomain: "testrez-b74f6.firebaseapp.com",
-  projectId: "testrez-b74f6",
-  storageBucket: "testrez-b74f6.appspot.com",
-  messagingSenderId: "757898537685",
-  appId: "1:757898537685:web:5ec2da1e6dd9f6b8c0105c"
+            authDomain: "testrez-b74f6.firebaseapp.com",
+            projectId: "testrez-b74f6",
+            storageBucket: "testrez-b74f6.appspot.com",
+            messagingSenderId: "757898537685",
+            appId: "1:757898537685:web:5ec2da1e6dd9f6b8c0105c"
         };
         // Initialize Firebase
         firebase.initializeApp(firebaseConfig);
@@ -35,7 +35,7 @@
         <div id="unity-footer">
             <div id="unity-webgl-logo"></div>
             <div id="unity-fullscreen-button"></div>
-            <div id="unity-build-title">Sipan_Rotation</div>
+            <div id="unity-build-title">rezan</div>
         </div>
     </div>
     <script>
@@ -72,14 +72,14 @@
         }
 
         var buildUrl = "Build";
-        var loaderUrl = buildUrl + "/res.loader.js";
+        var loaderUrl = buildUrl + "/buildrezan.loader.js";
         var config = {
-            dataUrl: buildUrl + "/res.data",
-            frameworkUrl: buildUrl + "/res.framework.js",
-            codeUrl: buildUrl + "/res.wasm",
+            dataUrl: buildUrl + "/buildrezan.data",
+            frameworkUrl: buildUrl + "/buildrezan.framework.js",
+            codeUrl: buildUrl + "/buildrezan.wasm",
             streamingAssetsUrl: "StreamingAssets",
             companyName: "DefaultCompany",
-            productName: "Sipan_Rotation",
+            productName: "rezan",
             productVersion: "0.1",
             showBanner: unityShowBanner,
         };
@@ -112,6 +112,7 @@
             canvas.style.width = "960px";
             canvas.style.height = "600px";
         }
+
         loadingBar.style.display = "block";
 
         var script = document.createElement("script");
