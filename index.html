@@ -22,8 +22,6 @@
         };
         // Initialize Firebase
         firebase.initializeApp(firebaseConfig);
-        var db = firebase.firestore();
-
     </script>
     <div id="unity-container" class="unity-desktop">
         <canvas id="unity-canvas" width=960 height=600 tabindex="-1"></canvas>
@@ -123,7 +121,6 @@
             createUnityInstance(canvas, config, (progress) => {
                 progressBarFull.style.width = 100 * progress + "%";
             }).then((unityInstance) => {
-                var unityInstance = UnityLoader.instantiate("unityContainer", "Build/Build.json", { onProgress: UnityProgress });
                 window.unityInstance = unityInstance;
                 loadingBar.style.display = "none";
                 fullscreenButton.onclick = () => {
